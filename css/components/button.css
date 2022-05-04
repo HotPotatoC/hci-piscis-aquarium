@@ -22,7 +22,7 @@
 }
 
 .btn-white:hover {
-  border-color: var(--color-white);
+  border-color: var(--color-secondary);
   background-color: var(--color-secondary);
   color: var(--color-primary);
 }
