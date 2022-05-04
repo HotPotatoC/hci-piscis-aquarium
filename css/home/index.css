@@ -88,6 +88,10 @@
   }
 }
 
+.explore-highlights-card .index {
+  opacity: 0.5;
+}
+
 .explore-highlights-card .name {
   /* Place name into the bottom of the card */
   position: absolute;
