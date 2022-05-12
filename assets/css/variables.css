@@ -1,0 +1,51 @@
+:root {
+  --color-primary: #1504b9;
+  --color-dark: #262626;
+  --color-white: #f7fff7;
+  --color-secondary: #d0cfce;
+
+  --typography-headline-font: "SatoshiBlack";
+  --typography-headline-size: 4rem;
+  --typography-headline-line-height: 96px;
+
+  --typography-title-font: "SatoshiBlack";
+  --typography-title-size: 2rem;
+
+  --typography-head-font: "SatoshiBold";
+  --typography-head-size: 1.5rem;
+
+  --typography-lead-font: "Satoshi";
+  --typography-lead-size: 1.5rem;
+
+  --typography-button-text: "Satoshi";
+  --typography-button-size: 1.5rem;
+
+  --transition-expo-in-out: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media screen and (min-width: 1920px) {
+  :root {
+    --color-primary: #1504b9;
+    --color-dark: #262626;
+    --color-white: #f7fff7;
+    --color-secondary: #d0cfce;
+
+    --typography-headline-font: "SatoshiBlack";
+    --typography-headline-size: 5rem;
+    --typography-headline-line-height: 1.2;
+
+    --typography-title-font: "SatoshiBlack";
+    --typography-title-size: 3rem;
+
+    --typography-head-font: "SatoshiBold";
+    --typography-head-size: 1.75rem;
+
+    --typography-lead-font: "Satoshi";
+    --typography-lead-size: 1.75rem;
+
+    --typography-button-text: "Satoshi";
+    --typography-button-size: 1.5rem;
+
+    --transition-expo-in-out: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}

@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"),
+    url("../fonts/Satoshi-Medium.woff") format("woff"),
+    url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SatoshiBold";
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"),
+    url("../fonts/Satoshi-Bold.woff") format("woff"),
+    url("../fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SatoshiBlack";
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"),
+    url("../fonts/Satoshi-Black.woff") format("woff"),
+    url("../fonts/Satoshi-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+.font-headline {
+  font-family: var(--typography-headline-font);
+  font-size: var(--typography-headline-size);
+  line-height: var(--typography-headline-line-height);
+}
+
+.font-title {
+  font-family: var(--typography-title-font);
+  font-size: var(--typography-title-size);
+}
+
+.font-head {
+  font-family: var(--typography-head-font);
+  font-size: var(--typography-head-size);
+}
+
+.font-lead {
+  font-family: var(--typography-lead-font);
+  font-size: var(--typography-lead-size);
+}
+
+.font-button {
+  font-family: var(--typography-button-font);
+  font-size: var(--typography-button-size);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-dark {
+  color: var(--color-dark);
+}
+
+.text-white {
+  color: var(--color-white);
+}

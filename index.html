@@ -10,93 +10,138 @@
     <!-- Meta Tags -->
 
     <!-- CSS Imports -->
-    <link rel="stylesheet" href="./css/variables.css" />
-    <link rel="stylesheet" href="./css/typography.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/components/button.css" />
-    <link rel="stylesheet" href="./css/components/header.css" />
-    <link rel="stylesheet" href="./css/components/footer.css" />
-    <link rel="stylesheet" href="./css/home/index.css" />
+    <link rel="stylesheet" href="./assets/css/variables.css" />
+    <link rel="stylesheet" href="./assets/css/typography.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/components/button.css" />
+    <link rel="stylesheet" href="./assets/css/components/divider.css" />
+    <link rel="stylesheet" href="./assets/css/components/header.css" />
+    <link rel="stylesheet" href="./assets/css/components/footer.css" />
+    <link rel="stylesheet" href="./assets/css/home/index.css" />
     <!-- /CSS Imports -->
   </head>
   <body>
     <header>
-      <nav class="container">
-        <img
-          class="nav-logo"
-          src="./images/logo/64x64-text.svg"
-          alt="Piscis Aquarium Logo"
-        />
+      <nav class="container layout-section">
+        <a href="./index.html">
+          <img
+            class="nav-logo"
+            src="./assets/images/logo/64x64-text.svg"
+            alt="Piscis Aquarium Logo"
+          />
+        </a>
         <div class="nav-links">
-          <a class="font-lead text-white" href="#">Explore</a>
-          <a class="font-lead text-white" href="#">About</a>
-          <a class="font-lead text-white" href="#">Contact</a>
+          <a class="font-head" href="explore.html">Explore</a>
+          <a class="font-head" href="contribute.html">Contribute</a>
+          <a class="font-head" href="about.html">About</a>
         </div>
       </nav>
     </header>
     <main>
-      <img
-        src="./images/hero-background.png"
-        alt="hero background"
-        class="hero-background"
-      />
-      <section class="container hero">
-        <img src="./images/waves.svg" alt="waves" class="hero-waves" />
-        <h1 class="font-headline">
-          <span class="text-white">Discover the</span><br />
-          <span class="deep-blue">Deep Blue</span>
-        </h1>
-        <button class="btn btn-white-outline">Explore</button>
+      <section class="container layout-section hero">
+        <div>
+          <img src="./assets/images/waves.svg" alt="waves" class="hero-waves" />
+          <h1 class="font-headline">
+            <span>Discover the</span><br />
+            <span class="text-primary">Deep Blue</span>
+          </h1>
+          <a href="explore.html">
+            <button class="btn">Explore</button>
+          </a>
+        </div>
+        <img src="./assets/images/hero-background.png" alt="" />
       </section>
-      <section class="container explore">
-        <h2 class="font-title">Explore</h2>
-        <p class="font-lead">Handpicked extraordinary sea creatures</p>
+      <section class="container layout-section explore">
+        <div class="space-between-center">
+          <h2 class="font-title">Explore</h2>
+          <svg
+            width="450"
+            height="4"
+            viewBox="0 0 450 4"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="-1.74846e-07"
+              y1="2"
+              x2="450"
+              y2="1.99995"
+              stroke="#262626"
+              stroke-width="4"
+            />
+          </svg>
+          <p class="font-head">Take a deep dive into life under the sea</p>
+        </div>
 
         <section class="explore-highlights">
           <a class="explore-highlights-card" href="#">
-            <img src="./images/fishies/mandarinfish.jpg" alt="" />
-            <h2 class="index font-title">01</h2>
+            <img src="./assets/images/fishies/mandarinfish.jpg" alt="" />
+            <h2 class="index font-head">01</h2>
             <h2 class="name font-head">Mandarinfish</h2>
           </a>
           <a class="explore-highlights-card" href="#">
-            <img src="./images/fishies/betta.jpg" alt="" />
-            <h2 class="index font-title">02</h2>
+            <img src="./assets/images/fishies/betta.jpg" alt="" />
+            <h2 class="index font-head">02</h2>
             <h2 class="name font-head">Betta</h2>
           </a>
           <a class="explore-highlights-card" href="#">
-            <img src="./images/fishies/harlequin-filefish.jpg" alt="" />
-            <h2 class="index font-title">03</h2>
+            <img src="./assets/images/fishies/harlequin-filefish.jpg" alt="" />
+            <h2 class="index font-head">03</h2>
             <h2 class="name font-head">Harlequin filefish</h2>
           </a>
           <a class="explore-highlights-card" href="#">
-            <img src="./images/fishies/sea-horse.jpg" alt="" />
-            <h2 class="index font-title">04</h2>
+            <img src="./assets/images/fishies/sea-horse.jpg" alt="" />
+            <h2 class="index font-head">04</h2>
             <h2 class="name font-head">Sea horse</h2>
           </a>
         </section>
         <section class="explore-see-more">
-          <button class="btn">See more</button>
+          <a class="btn" href="explore.html">See more</a>
         </section>
       </section>
-      <section class="container whoarewe">
+      <section class="container layout-section about">
+        <div class="divider"></div>
         <h2 class="font-title">Who are we?</h2>
-        <img src="./images/whoarewefish.png" alt="Who are we?" />
-        <p class="font-lead">
-          We are a non-profit organization whose aim is to educate people about
-          the importance of sea creatures and to enable communities and
-          individuals to take action to protect and restore the ocean.
-        </p>
-
-        <button class="btn">Learn more</button>
+        <div class="space-between-center">
+          <div class="w-1/2">
+            <img src="./assets/images/about-background.jpg" alt="" />
+          </div>
+          <div class="w-1/2 about-content">
+            <p class="font-lead">
+              We are a non-profit organization whose aim is to educate people
+              about the importance of sea creatures and to enable communities
+              and individuals to take action to protect and restore the ocean.
+            </p>
+            <a class="font-lead text-primary underline" href="about.html"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <div class="divider"></div>
       </section>
-      <img class="bg-stripe" src="./images/stripes.svg" alt="" />
+      <div class="relative">
+        <section class="container layout-section contribute">
+          <h2 class="font-title">Contribute Photographs</h2>
+          <img src="./assets/images/contribute-fishes.png" alt="Who are we?" />
+          <p class="font-lead">
+            Got an interesting marine life you want to share?
+          </p>
+          <p class="font-lead">Feel free to do so!</p>
+          <button class="btn">Contribute</button>
+        </section>
+        <img
+          class="contribute-background"
+          src="./assets/images/contribute-background.svg"
+          alt="Who are we?"
+        />
+      </div>
       <div class="relative">
         <img
           class="mailinglist-background"
-          src="./images/mailinglist-background.png"
+          src="./assets/images/mailinglist-background.png"
           alt=""
         />
-        <section class="container mailinglist">
+        <section class="container layout-section mailinglist">
           <div class="w-1/2">
             <h2 class="font-title text-white">Join the mailing list</h2>
             <p class="font-lead text-white">
@@ -113,9 +158,12 @@
       </div>
     </main>
     <footer class="relative">
-      <section class="footer-brand container">
+      <section class="footer-brand container layout-section">
         <div class="w-1/2">
-          <img src="./images/logo/128x128.svg" alt="Piscis Aquarium Logo" />
+          <img
+            src="./assets/images/logo/128x128.svg"
+            alt="Piscis Aquarium Logo"
+          />
         </div>
         <div class="w-1/2">
           <p class="font-lead text-white">
@@ -124,25 +172,40 @@
             communities and individuals to take action to protect and restore
             the ocean.
           </p>
+          <section class="footer-social-links">
+            <a
+              href="https://instagram.com/juanwmv"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/images/icons/instagram.svg" alt="" />
+            </a>
+            <a
+              href="https://github.com/HotPotatoC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/images/icons/github.svg" alt="" />
+            </a>
+          </section>
         </div>
       </section>
-      <section class="footer-links container">
+      <section class="footer-links container layout-section">
         <div>
           <a class="font-lead text-white" href=".">Home</a>
-          <a class="font-lead text-white" href="#">Explore</a>
-          <a class="font-lead text-white" href="#">About</a>
-          <a class="font-lead text-white" href="#">Contact</a>
+          <a class="font-lead text-white" href="explore.html">Explore</a>
+          <a class="font-lead text-white" href="about.html">About</a>
+          <a class="font-lead text-white" href="contribute.html">Contribute</a>
         </div>
         <div>
           <a class="font-lead text-white" href="#">Subscribe</a>
-          <a class="font-lead text-white" href="#">Submit a photo</a>
         </div>
         <div>
           <a class="font-lead text-white" href="#">Terms of Use</a>
           <a class="font-lead text-white" href="#">Privacy Policy</a>
         </div>
       </section>
-      <img class="stripes" src="./images/stripes-footer.svg" />
+      <img class="stripes" src="./assets/images/stripes-footer.svg" />
     </footer>
   </body>
 </html>
