@@ -65,3 +65,7 @@
 .text-white {
   color: var(--color-white);
 }
+
+.text-success {
+  color: var(--color-success);
+}

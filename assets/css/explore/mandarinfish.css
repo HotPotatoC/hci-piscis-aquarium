@@ -1,3 +1,65 @@
-main {
+.fish-description {
   margin-top: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.fish-description img {
+  max-width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 1920px) {
+  .fish-description img {
+    max-width: 550px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+}
+
+.fish-description h1,
+.fish-description p {
+  margin-bottom: 3rem;
+}
+
+.fish-description .conservation-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.fish-scientific-classification {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.fish-scientific-classification h2 {
+  margin-bottom: 2rem;
+}
+
+.fish-scientific-classification img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.fish-scientific-classification .levels {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 2rem;
+}
+
+.explore-more-btn {
+  text-align: center;
+  margin: 6rem 0;
 }

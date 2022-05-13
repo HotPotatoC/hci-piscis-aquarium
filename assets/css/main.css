@@ -1,9 +1,17 @@
+/*
+Disclaimer: TailwindCSS is not used here, there might be similar classes but,
+it's just because I've used it alot before :)
+
+~ Juan 2501994771
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  /* border: 1px solid lime; */
+  /* V Debug border V */
+  /* border: 1px solid #E03E1A; */
 }
 
 html {
