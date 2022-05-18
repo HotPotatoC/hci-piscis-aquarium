@@ -1,7 +1,4 @@
 /*
-Disclaimer: TailwindCSS is not used here, there might be similar classes but,
-it's just because I've used it alot before :)
-
 ~ Juan 2501994771
 */
 
@@ -15,7 +12,9 @@ it's just because I've used it alot before :)
 }
 
 html {
+  -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow-y: scroll;
   scroll-behavior: smooth;
 }
 

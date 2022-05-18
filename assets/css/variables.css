@@ -1,9 +1,28 @@
 :root {
-  --color-primary: #1504b9;
-  --color-dark: #262626;
-  --color-white: #f7fff7;
-  --color-secondary: #d0cfce;
-  --color-success: #3ACFB4;
+  --color-primary: hsl(246, 96%, 37%) /* #1504b9 */;
+  --color-primary-h: 246;
+  --color-primary-s: 96%;
+  --color-primary-l: 37%;
+
+  --color-dark: hsl(0, 0%, 15%); /* #262626 */
+  --color-dark-h: 0;
+  --color-dark-s: 0%;
+  --color-dark-l: 15%;
+
+  --color-white: hsl(120, 100%, 98%) /* #f7fff7 */;
+  --color-white-h: 120;
+  --color-white-s: 100%;
+  --color-white-l: 98%;
+
+  --color-secondary: hsl(30, 2%, 81%) /* #d0cfce */;
+  --color-secondary-h: 30;
+  --color-secondary-s: 2%;
+  --color-secondary-l: 81%;
+
+  --color-success: hsl(169, 61%, 52%) /* #3acfb4 */;
+  --color-success-h: 169;
+  --color-success-s: 61%;
+  --color-success-l: 52%;
 
   --typography-headline-font: "SatoshiBlack";
   --typography-headline-size: 4rem;
@@ -18,19 +37,41 @@
   --typography-lead-font: "Satoshi";
   --typography-lead-size: 1.5rem;
 
-  --typography-button-text: "Satoshi";
+  --typography-button-font: "Satoshi";
   --typography-button-size: 1.5rem;
+
+  --typography-input-label-font: "SatoshiBold";
+  --typography-input-label-size: 1.25rem;
 
   --transition-expo-in-out: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 @media screen and (min-width: 1920px) {
   :root {
-    --color-primary: #1504b9;
-    --color-dark: #262626;
-    --color-white: #f7fff7;
-    --color-secondary: #d0cfce;
-    --color-success: #3ACFB4;
+    --color-primary: hsl(246, 96%, 37%) /* #1504b9 */;
+    --color-primary-h: 246;
+    --color-primary-s: 96%;
+    --color-primary-l: 37%;
+
+    --color-dark: hsl(0, 0%, 15%); /* #262626 */
+    --color-dark-h: 0;
+    --color-dark-s: 0%;
+    --color-dark-l: 15%;
+
+    --color-white: hsl(120, 100%, 98%) /* #f7fff7 */;
+    --color-white-h: 120;
+    --color-white-s: 100%;
+    --color-white-l: 98%;
+
+    --color-secondary: hsl(30, 2%, 81%) /* #d0cfce */;
+    --color-secondary-h: 30;
+    --color-secondary-s: 2%;
+    --color-secondary-l: 81%;
+
+    --color-success: hsl(169, 61%, 52%) /* #3acfb4 */;
+    --color-success-h: 169;
+    --color-success-s: 61%;
+    --color-success-l: 52%;
 
     --typography-headline-font: "SatoshiBlack";
     --typography-headline-size: 5rem;
@@ -45,8 +86,11 @@
     --typography-lead-font: "Satoshi";
     --typography-lead-size: 1.75rem;
 
-    --typography-button-text: "Satoshi";
+    --typography-button-font: "Satoshi";
     --typography-button-size: 1.5rem;
+
+    --typography-input-label-font: "SatoshiBold";
+    --typography-input-label-size: 1.5rem;
 
     --transition-expo-in-out: cubic-bezier(0.19, 1, 0.22, 1);
   }

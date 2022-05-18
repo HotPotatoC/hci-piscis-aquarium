@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../assets/css/components/header.css" />
     <link rel="stylesheet" href="../assets/css/components/footer.css" />
     <link rel="stylesheet" href="../assets/css/components/button.css" />
-    <link rel="stylesheet" href="../assets/css/explore/mandarinfish.css" />
+    <link rel="stylesheet" href="../assets/css/contribute/index.css" />
     <!-- /CSS Imports -->
   </head>
   <body>
@@ -31,12 +31,93 @@
         </a>
         <div class="nav-links">
           <a class="font-head" href="../explore.html">Explore</a>
-          <a class="font-head" href="../contribute/01-description.html">Contribute</a>
+          <a class="font-head" href="../contribute/01-description.html"
+            >Contribute</a
+          >
           <a class="font-head" href="../about.html">About</a>
         </div>
       </nav>
     </header>
     <main class="container layout-section">
+      <div class="head">
+        <h1 class="font-title">Contribute</h1>
+        <div class="steps">
+          <div class="steps-line"></div>
+          <div class="step-finished">
+            <img src="../assets/images/icons/checked.svg" alt="" />
+          </div>
+          <div class="step-current">
+            <h2 class="text-head text-white">2</h2>
+          </div>
+          <div class="step">
+            <h2 class="text-head text-white">3</h2>
+          </div>
+        </div>
+      </div>
+      <form action="./02-scientific-classification.html">
+        <div class="input-group">
+          <label class="font-input-label" for="conservation-status"
+            >Conservation Status</label
+          >
+          <div class="select">
+            <select
+              class="font-lead"
+              name="conservation-status"
+              id="conservation-status"
+            >
+              <option>Least Concerned</option>
+              <option>Near Threatened</option>
+              <option>Vulnerable</option>
+              <option>Endangered</option>
+              <option>Critically endangered</option>
+              <option>Extinct in wild</option>
+              <option>Extinct</option>
+            </select>
+            <img
+              src="../assets/images/icons/chevron-down.svg"
+              alt="arrow down"
+            />
+          </div>
+        </div>
+        <div class="input-grid-2">
+          <div class="input-group">
+            <label class="font-input-label" for="kingdom">Kingdom</label>
+            <input class="font-lead" type="text" name="kingdom" id="kingdom" />
+          </div>
+          <div class="input-group">
+            <label class="font-input-label" for="phylum">Phylum</label>
+            <input class="font-lead" type="text" name="phylum" id="phylum" />
+          </div>
+          <!---->
+          <div class="input-group">
+            <label class="font-input-label" for="class">Class</label>
+            <input class="font-lead" type="text" name="class" id="class" />
+          </div>
+          <div class="input-group">
+            <label class="font-input-label" for="order">Order</label>
+            <input class="font-lead" type="text" name="order" id="order" />
+          </div>
+          <!---->
+          <div class="input-group">
+            <label class="font-input-label" for="family">Family</label>
+            <input class="font-lead" type="text" name="family" id="family" />
+          </div>
+          <div class="input-group">
+            <label class="font-input-label" for="genus">Genus</label>
+            <input class="font-lead" type="text" name="genus" id="genus" />
+          </div>
+          <!---->
+          <div class="input-group">
+            <label class="font-input-label" for="species">Species</label>
+            <input class="font-lead" type="text" name="species" id="species" />
+          </div>
+        </div>
+      </form>
+      <div class="continue-btn">
+        <a href="./03-image-upload.html">
+          <button class="btn">Continue</button>
+        </a>
+      </div>
     </main>
     <footer class="relative">
       <section class="footer-brand container layout-section">
@@ -76,7 +157,9 @@
           <a class="font-lead text-white" href=".">Home</a>
           <a class="font-lead text-white" href="explore.html">Explore</a>
           <a class="font-lead text-white" href="about.html">About</a>
-          <a class="font-lead text-white" href="contribute/01-description.html">Contribute</a>
+          <a class="font-lead text-white" href="contribute/01-description.html"
+            >Contribute</a
+          >
         </div>
         <div>
           <a class="font-lead text-white" href="#">Subscribe</a>

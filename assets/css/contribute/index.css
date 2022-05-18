@@ -1,0 +1,134 @@
+.head {
+  margin-top: 10rem;
+}
+
+.head .steps {
+  position: relative;
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  max-width: fit-content;
+}
+
+.head .steps .steps-line {
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  width: 100%;
+  height: 2px;
+  background: var(--color-secondary);
+}
+
+.head .steps > *:not(.steps-line) + *:not(.steps-line) {
+  margin-left: 6rem;
+}
+
+.head .steps .step,
+.head .steps .step-current,
+.head .steps .step-finished {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.head .steps .step {
+  background: var(--color-secondary);
+  border: 4px solid var(--color-secondary);
+}
+
+.head .steps .step-current {
+  background: var(--color-primary);
+  border: 4px solid var(--color-primary);
+}
+
+.head .steps .step-finished {
+  --lighten-percentage: 53%;
+  background: hsl(
+    var(--color-primary-h),
+    var(--color-primary-s),
+    calc(var(--color-primary-l) + var(--lighten-percentage))
+  );
+  border: 4px solid var(--color-primary);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+form .input-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+  width: 100%;
+}
+
+form .input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+form .input-group label,
+form .input-group span {
+  --lighten-percentage: 50%;
+  color: hsl(
+    var(--color-dark-h),
+    var(--color-dark-s),
+    calc(var(--color-dark-l) + var(--lighten-percentage))
+  );
+  margin-bottom: 1rem;
+}
+
+form .input-group input,
+form div[contenteditable] {
+  background: none;
+  appearance: none;
+  border: none;
+  border-bottom: 2px solid;
+  border-color: var(--color-secondary);
+  transition: border-color 0.2s ease-out;
+}
+
+form .input-group div[contenteditable] {
+  width: 100%;
+  word-break: break-all;
+}
+
+form .input-group input:focus,
+form .input-group select:focus,
+form div[contenteditable]:focus,
+form div[contenteditable]:not(:empty) {
+  outline: none;
+  border-color: var(--color-dark);
+}
+
+form .input-group .select {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  border-bottom: 2px solid;
+  border-color: var(--color-secondary);
+  padding: 1rem 0;
+}
+
+form .input-group .select select {
+  background: none;
+  appearance: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.continue-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12rem;
+}

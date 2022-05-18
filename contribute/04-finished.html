@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../assets/css/components/footer.css" />
     <link rel="stylesheet" href="../assets/css/components/button.css" />
     <link rel="stylesheet" href="../assets/css/contribute/index.css" />
+    <link rel="stylesheet" href="../assets/css/contribute/finished.css" />
     <!-- /CSS Imports -->
   </head>
   <body>
@@ -43,41 +44,44 @@
         <h1 class="font-title">Contribute</h1>
         <div class="steps">
           <div class="steps-line"></div>
-          <div class="step-current">
-            <h2 class="text-head text-white">1</h2>
+          <div class="step-finished">
+            <img src="../assets/images/icons/checked.svg" alt="" />
           </div>
-          <div class="step">
-            <h2 class="text-head text-white">2</h2>
+          <div class="step-finished">
+            <img src="../assets/images/icons/checked.svg" alt="" />
           </div>
-          <div class="step">
-            <h2 class="text-head text-white">3</h2>
+          <div class="step-finished">
+            <img src="../assets/images/icons/checked.svg" alt="" />
           </div>
         </div>
       </div>
-      <form action="./02-scientific-classification.html">
-        <div class="input-group">
-          <label class="font-input-label" for="name">Marine life name</label>
-          <input class="font-lead" type="text" name="name" id="name" />
-        </div>
-        <div class="input-group">
-          <span
-            onclick="document.getElementById('description').focus()"
-            class="font-input-label"
-            for="description"
-            >Description</span
-          >
-          <div
-            class="font-lead"
-            type="text"
-            name="description"
-            id="description"
-            contenteditable=""
-          ></div>
-        </div>
-      </form>
+
+      <section class="alert">
+        <svg
+          width="140"
+          height="140"
+          viewBox="0 0 140 140"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="70" cy="70" r="70" fill="#1504B9" />
+          <path
+            d="M101.393 47.2178L58.8267 89.7838L39.4785 70.4357"
+            stroke="#F7FFF7"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <h1 class="font-title text-primary">
+          Your proposal have been submitted!
+        </h1>
+      </section>
+
       <div class="continue-btn">
-        <a href="./02-scientific-classification.html">
-          <button class="btn">Continue</button>
+        <a href="../index.html">
+          <button class="btn">Go Back</button>
         </a>
       </div>
     </main>

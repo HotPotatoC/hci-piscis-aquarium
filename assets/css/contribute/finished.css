@@ -1,0 +1,16 @@
+.alert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.alert svg {
+  margin-bottom: 2rem;
+}
+
+.alert h1 {
+    max-width: 50%;
+    text-align: center;
+}
